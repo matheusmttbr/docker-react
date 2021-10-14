@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi
         </p>
         <a
           className="App-link"
@@ -15,11 +14,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Não é que funcionou
+          Learn React
         </a>
       </header>
     </div>
   );
 }
-
 export default App;
