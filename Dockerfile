@@ -1,8 +1,9 @@
-FROM node:alpine as builder
+FROM node:12-alpine as builder
 WORKDIR '/app'
 COPY package.json .
-RUN nmp install
+RUN nmp install --no-progress
 COPY . .
+
 RUN npm run build
 
 FROM nginx
