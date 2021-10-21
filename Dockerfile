@@ -1,4 +1,4 @@
-FROM node:12-alpine as builder
+FROM node:alpine as builder
 WORKDIR '/app'
 COPY package.json .
 RUN nmp install --no-progress
